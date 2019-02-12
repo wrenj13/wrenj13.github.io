@@ -1,0 +1,190 @@
+html
+{
+       	height: 100%; /* These are set so that the inner elements have something to compare to */
+        position: relative;
+}
+
+body
+{
+	height: 100%;
+	width: 100%;
+        font-family: 'Raleway', sans-serif;
+        padding-top: 70px;
+}
+
+#navbar
+{
+	position:absolute;
+   	top:5px;
+   	bottom:5px;
+	width: 30%;
+	float: left;
+	overflow: hidden;
+}
+
+#navbar div
+{
+	margin: 10% 15% 10% 15%;
+}
+
+#navbar div a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 50px;
+}
+
+#navbar div a:hover
+{
+	color: #FFa500;
+}
+
+#opening_background 
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url("../web background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+#opening_background .text_container
+{
+    background-color: rgba(255,255,255,.8);
+}
+
+#opening_background h1
+{
+    font-size: 50px;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.5);
+}
+    
+.text_container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+#right-panel p
+{
+	position: relative;
+}
+
+#right-panel
+{
+	width: 69%;
+	height: 100%;
+	float: right;
+	text-align: left;
+	overflow: scroll;
+}
+
+#right-panel #codeDisplay
+{
+	background-color: white;
+	height: 99%;
+	width: 60%;
+	overflow: scroll;
+	float: left;
+}
+
+.centerImage
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#right-panel #about-me
+{
+	float: right;
+	width: 50%;
+}
+
+.caption
+{
+	font-style: italic;
+	font-size: 12px;
+	position: relative;
+}
+
+#right-panel #containingBlock
+{
+	width:45%;
+	float: left;
+	position: relative;
+	top: 25px;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#sectionTitle
+{
+	font-weight: bold;
+	text-align: left;
+}
+
+#right-panel #section
+{
+	width: 90%;
+	margin-left: 50px;
+	text-align: left;
+}
+
+.credits {
+	position: absolute;
+	bottom: 10px;
+	left:50%;
+	transform: translate(-50%, 0);
+}
+
+#sent-message {
+	display: none;
+	background-color: green;
+	padding: 10px;
+	color: white;
+}
+
+#error-message {
+	display: none;
+	background-color: red;
+	padding: 10px;
+	color: white;
+}
+
+.required-field {
+    color: red;
+    font-size: 32px;
+    padding-right: 10px;
+    display: inline;
+}
+
+footer {
+    margin: 50px 0;
+}

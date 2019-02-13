@@ -29,7 +29,7 @@ $('#comment-form').on('submit', function () {
         document.getElementById("sent-message").style.display = "block";
     },
     error: function(data) {
-        alert(data)
+        console.log(data)
     }
 });
     return false;
